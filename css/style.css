@@ -4,3 +4,45 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #141922;
+    color: white;
+}
+
+footer{
+    background-color: #282828 ;
+    height: 100px;
+    
+}
+
+.body-top{
+    display: flex;
+    height: calc(100vh - 100px); 
+    overflow: auto; 
+}
+
+/*nav{
+    flex-basis: 10%;
+    background-color: black;
+}
+
+main{
+    flex-basis: 90%;
+    
+}
+
+header{
+    background-color: black;
+    opacity: 0.3;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.content{
+    overflow:auto;
+}*/
