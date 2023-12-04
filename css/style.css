@@ -151,29 +151,8 @@ footer{
     color: white;
 }
 
-/*INIZIO A LAVORARE SUL MAIN*/
-main{
-    flex-basis: 100%;
-    height: calc(100vh - 100px); 
-    overflow: auto;
-   
-}
-
-.main-navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px 0;
-}
-
-.main-navbar a{
-    font-size: 12px;
-    font-weight: 700;
-    color: #7F7F7F;
-}
 /*AGGIUNGO UN HEADER AL MAIN*/
-header{
+main header{
     background-color: rgba(0, 0, 0, 0.3);
     height: 100px;
     position: sticky;
@@ -184,7 +163,55 @@ header{
     justify-content: end;
     padding-right: 20px;
 }
+/*INIZIO A LAVORARE SUL MAIN*/
+main{
+    flex-basis: 100%;
+    height: calc(100vh - 100px); 
+    overflow: auto;
+   
+}
+
+.content-navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.content-navbar a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #7F7F7F;
+}
 
 .container{
     padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+
+}
+
+.col{
+    flex-basis: calc(100% / 2);
+    padding: 10px;
+    text-align: center;
+}
+
+.subtitle{
+    color: #7F7F7F;
+    font-size: small;
+    font-weight: 600;
+}
+.title{
+    margin: 10px 0;
+}
+
+.popular img{
+    border-radius: 50%;
 }
