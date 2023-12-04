@@ -5,39 +5,60 @@
     box-sizing: border-box;
 }
 
+/*GENERICS*/
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #141922;
     color: white;
 }
+a {
+    text-decoration: none;
+}
 
+/*UTILITIES*/
+.btn{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px 40px;
+    color: white;
+    font-weight: 600;
+    font-size: small;
+}
+
+/*CREO LA PARTE SOPRA DEL BODY*/
+.body-top{
+    display: flex;
+}
+
+/*CREO IL FOOTER DEL BODY*/
 footer{
     background-color: #282828 ;
     height: 100px;
     
 }
 
-.body-top{
-    display: flex;
-}
-
+/*DIVIDO IL body-top NELLA NAVBAR E NEL MAIN*/
 nav{
-    flex-basis: 10%;
+    width: 50px;
     background-color: black;
 }
 
 main{
-    flex-basis: 90%;
+    flex-basis: 100%;
     height: calc(100vh - 100px); 
     overflow: auto;
 }
 
+/*AGGIUNGO UN HEADER AL MAIN*/
 header{
-    background-color: black;
-    opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
     height: 100px;
     position: sticky;
     left: 0;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
 }
 
