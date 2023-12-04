@@ -19,17 +19,16 @@ footer{
 
 .body-top{
     display: flex;
-    height: calc(100vh - 100px); 
-    overflow: auto; 
 }
 
-/*nav{
+nav{
     flex-basis: 10%;
     background-color: black;
 }
 
 main{
     flex-basis: 90%;
+     
     
 }
 
@@ -42,7 +41,7 @@ header{
     right: 0;
     left: 0;
 }
-
 .content{
-    overflow:auto;
-}*/
+    height: calc(100vh - 200px); 
+    overflow: auto;
+}
