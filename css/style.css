@@ -176,7 +176,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .content-navbar a{
@@ -211,7 +211,9 @@ main{
 .title{
     margin: 10px 0;
 }
-
+.section-title{
+    margin: 30px 0;
+}
 .popular img{
     border-radius: 50%;
 }
