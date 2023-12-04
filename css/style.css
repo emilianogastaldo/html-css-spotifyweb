@@ -19,6 +19,10 @@ img{
     max-width: 100%;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /*UTILITIES*/
 .btn{
     border: 1px solid white;
@@ -49,7 +53,7 @@ footer{
 }
 
 /*DIVIDO IL body-top NELLA NAVBAR E NEL MAIN*/
-nav{
+.body-navbar{
     width: 50px;
     background-color: black;
     padding: 0 10px;
@@ -87,10 +91,6 @@ nav{
     display: none;
 }
 
-.playlist ul{
-    list-style-type: none;
-}
-
 .playlist p,
 .playlist a{
     
@@ -123,9 +123,6 @@ nav{
     margin-right: 5px;
 }
 
-
-
-
 .nav-footer{
     text-align: center;    
 }
@@ -145,23 +142,36 @@ nav{
     vertical-align: middle;
     height: 30px;
     width: 30px;
-    background-color: #808080;
+    background-color: #7F7F7F;
     border-radius: 50%;
-    border: 1ps solid transparent;
+    border: 1px solid transparent;
     margin: 10px 0;
 }
 .profile-name{
     color: white;
 }
 
-
-
+/*INIZIO A LAVORARE SUL MAIN*/
 main{
     flex-basis: 100%;
     height: calc(100vh - 100px); 
     overflow: auto;
+   
 }
 
+.main-navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.main-navbar a{
+    font-size: 12px;
+    font-weight: 700;
+    color: #7F7F7F;
+}
 /*AGGIUNGO UN HEADER AL MAIN*/
 header{
     background-color: rgba(0, 0, 0, 0.3);
@@ -175,3 +185,6 @@ header{
     padding-right: 20px;
 }
 
+.container{
+    padding: 20px;
+}
