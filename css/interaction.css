@@ -1,0 +1,25 @@
+/*HOVER PER FAR DIVENTARE BIANCHE LE SCRITTE*/
+li:hover a,
+.playlist p:hover{
+    color: white;
+}
+
+.sidebar-icon:hover{
+    filter: opacity(1);
+}
+
+.playlist p:hover::before{
+    background-color: white;
+}
+
+/*linea giallo sotto alla lista della navbar del main*/
+.content-navbar li:active::after{
+    content: '';
+    border: 1px solid yellow;
+}
+
+.fa-circle-play:hover,
+header a:hover
+{    
+    transform: scale(1.2);  
+}
