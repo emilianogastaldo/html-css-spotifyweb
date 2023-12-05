@@ -3,15 +3,14 @@
 /*MEDIA QUERY PER UNO SCREMO SMALL*/
 @media screen and (min-width: 640px){
     .sidebar{
-        flex-basis: 230px;
+        flex-basis: 250px;
         padding: 0 20px;
     }
     .logo-small{
         display: none;
     }
-    #logo .logo-big{
+    .logo-big{
         display: block;
-        margin: 20px 0;
     }
     .label{
         display: inline-block;
@@ -32,5 +31,19 @@
     }
     .content-navbar li{
         flex-basis: calc(100% / 3);
+    }
+}
+
+/*MEDIA QUERY PER UNO SCREMO MEDIUM*/
+@media screen and (min-width: 900px){
+    .content-navbar li{
+        flex-basis: calc(100% / 5);
+    }
+    .row{
+        margin: 0 -5px;
+    }
+    .col{
+        padding: 5px;
+        flex-basis: calc(100% / 4);
     }
 }
