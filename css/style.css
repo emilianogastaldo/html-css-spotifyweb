@@ -25,6 +25,10 @@ ul{
 }
 
 /*UTILITIES*/
+.max-height{
+    max-width: auto;
+    max-height: 100%;
+}
 .btn{
     border: 1px solid white;
     border-radius: 30px;
@@ -245,9 +249,27 @@ footer{
     flex-grow: 1;
 }
 /*LAVORO SULLA SEZIONE DELLA CANZONE*/
+.playing-song{
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+}
 
-
-
+.song-title{
+    margin-left: 10px;
+    flex-basis: 50%;
+}
+.song-title > *{
+    margin: 0;
+}
+.song-title .subtitle{
+    font-size: 12px;
+}
+.left-icon{
+    color: #7F7F7F;
+    display: flex;
+    gap: 20px;
+}
 /*LAVORO SULLA SEZIONE DEL PLAYER*/
 .play-icons{
     padding: 15px 0;
