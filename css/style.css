@@ -199,6 +199,7 @@ main header{
     text-align: right;
     line-height: 100px;
 }
+
 /*INIZIO A LAVORARE SUL MAIN*/
 main{
     flex-grow: 1;
@@ -225,7 +226,7 @@ main{
 }
 
 .wrapper{
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .popular img{
