@@ -1,0 +1,26 @@
+/*INIZIO LE MEDIA QUERY*/
+
+/*MEDIA QUERY PER UNO SCREMO SMALL*/
+@media screen and (min-width: 640px){
+    .sidebar{
+        flex-basis: 230px;
+        padding: 0 20px;
+    }
+    .logo-small{
+        display: none;
+    }
+    #logo .logo-big{
+        display: block;
+        margin: 20px 0;
+    }
+    .label{
+        display: inline-block;
+    }
+    .playlist{
+        display: block;
+    }
+    .sidebar-footer{
+        align-items: flex-start;
+    }
+    
+}
