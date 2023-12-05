@@ -13,6 +13,7 @@ body{
 }
 a {
     text-decoration: none;
+    display: block;
 }
 
 img{
@@ -30,19 +31,19 @@ ul{
     max-height: 100%;
 }
 .btn{
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 15px 40px;
+    border: 1px solid white;    
     color: white;
     font-weight: 600;
     font-size: small;
+    padding: 15px 30px;
+    border-radius: 40px;
 }
 
 .label{
     vertical-align: middle;
     display: none;
     font-weight: 600;
-    color: #7F7F7F;
+    color: white;
 }
 /*creo la riga flex con colonne e card*/
 .row{
@@ -113,12 +114,13 @@ ul{
 #library img
 {
     margin: 5px 0;
-    height: 30px;
-    filter: opacity(0.5);
+    height: 30px;    
     vertical-align: middle;
     display: inline-block;
 }
-
+.sidebar-icon{
+    filter: opacity(0.5);
+}
 /*CREO LA SEZIONE PLAYLIST*/
 .playlist{
     margin: 20px 0;
@@ -165,14 +167,13 @@ ul{
 }
 #download img{   
     height: 1rem;
-    filter: opacity(0.5);    
 }
-#download{    
+#download{   
     font-size: small;
     padding-bottom: 10px;
 }
 #profile{
-    margin: 15px 0;
+    padding: 15px 0;
 }
 #profile img{    
     height: 30px;
@@ -193,13 +194,11 @@ main header{
     top: 0;
     left: 0;
     right: 0;
-
     padding-right: 20px;
-
-    text-align: right;
-    line-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
-
 /*INIZIO A LAVORARE SUL MAIN*/
 main{
     flex-grow: 1;
@@ -219,11 +218,20 @@ main{
     flex-basis: auto;
 }
 
+.content-navbar li::after{
+    content: '';
+    display: block;
+    width: 50%;
+    border: 1px solid transparent;
+    margin: 0 auto;
+}
+
 .content-navbar a{
     font-size: 12px;
     font-weight: 700;
     color: #7F7F7F;
 }
+
 
 .wrapper{
     padding: 0 20px;
@@ -268,7 +276,7 @@ footer{
     font-size: 12px;
 }
 .left-icon{
-    color: #7F7F7F;
+    color: white;
     display: flex;
     gap: 20px;
 }
