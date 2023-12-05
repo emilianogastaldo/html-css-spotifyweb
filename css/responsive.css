@@ -22,5 +22,15 @@
     .sidebar-footer{
         align-items: flex-start;
     }
-    
+    .sidebar-footer img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    #download{
+        width: 100%;
+        border-bottom: 1px solid #7f7f7f;
+    }
+    .content-navbar li{
+        flex-basis: calc(100% / 3);
+    }
 }
