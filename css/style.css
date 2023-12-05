@@ -39,18 +39,14 @@ ul{
     font-weight: 600;
     color: #7F7F7F;
 }
+
+
 /*CREO LA PARTE SOPRA DEL BODY*/
 .body-top{
     display: flex;
     height: calc(100vh - 100px); 
 }
 
-/*CREO IL FOOTER DEL BODY*/
-footer{
-    background-color: #282828 ;
-    height: 100px;
-    
-}
 
 /*DIVIDO IL body-top NELLA SIDEBAR E NEL MAIN*/
 .sidebar{
@@ -216,4 +212,47 @@ main{
 }
 .popular img{
     border-radius: 50%;
+}
+
+.border{
+    border: 2px solid white;
+}
+
+/*CREO IL FOOTER DEL BODY*/
+footer{
+    background-color: #282828 ;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.playing-song,
+.volume-bar{
+    flex-basis: 30%;
+}
+.play-bar{
+    flex-grow: 1;
+    text-align: center;
+
+}
+.play-icon{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.fa-circle-play{
+    font-size: 2rem;
+}
+.time-bar{
+    font-size: x-small;
+}
+.progress-bar{
+    display: inline-block;
+    height: 5px;
+    background-color: #555;
+    border-radius: 5px;
+    width: 70%;
 }
