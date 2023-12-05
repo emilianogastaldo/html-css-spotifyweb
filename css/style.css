@@ -2,14 +2,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 /*GENERICS*/
-body{
+body{    
     font-family: 'Montserrat', sans-serif;
     background-color: #141922;
-    color: white;
+    color: white;    
 }
 a {
     text-decoration: none;
@@ -241,6 +241,43 @@ main{
     padding: 0 20px;
 }
 
+.card-img{
+    position: relative;
+}
+
+.card-img::after{
+    font: var(--fa-font-regular);
+    content: '\f144';
+    display: none;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    right: 50%;   
+    translate: 50% -50%;
+}
+
+.card-img::before{
+    content: '';
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.popular .card-img::before{
+    content: '';
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 .popular img{
     border-radius: 50%;
 }

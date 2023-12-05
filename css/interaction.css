@@ -2,9 +2,11 @@
 li:hover a,
 .playlist p:hover{
     color: white;
+    cursor: pointer;
 }
 
 .sidebar-icon:hover{
+    cursor: pointer;
     filter: opacity(1);
 }
 
@@ -18,19 +20,24 @@ li:hover a,
     border: 1px solid yellow;
 }
 
-
+/*ingrandisco i bottoni*/
 .fa-circle-play:hover,
 header a:hover
 {    
     transform: scale(1.2);  
+    cursor: pointer;
 }
 
+/*evidenzio il sottotitolo*/
 .song-title .subtitle:hover{
+    cursor: pointer;
     text-decoration: underline;
     color: white;
 }
 
+/*Faccio diventare gialla la barra*/
 .progress-bar .current-progress:hover{
+    cursor: pointer;
     background-color: yellow;
 }
 .progress-bar .current-progress:hover::after{
@@ -45,4 +52,11 @@ header a:hover
     left: 100%;
     bottom: 50%;
     translate: -50% 50%;
+}
+
+/*Background e simbolo play all'hover*/
+.card-img:hover::before,
+.card-img:hover::after
+{
+    display: block;
 }
