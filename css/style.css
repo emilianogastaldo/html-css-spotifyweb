@@ -159,28 +159,20 @@ ul{
 .sidebar-footer{
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;  
 }
-#download img{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1rem;
+#download img{   
     height: 1rem;
-    filter: opacity(0.5);
-    
+    filter: opacity(0.5);    
 }
-#download{
-    width: 100%;
-    border-bottom: 1px solid #7F7F7F;
+#download{    
     font-size: small;
     padding-bottom: 10px;
 }
 #profile{
     margin: 15px 0;
 }
-#profile img{
-    display: inline-block;
-    vertical-align: middle;
+#profile img{    
     height: 30px;
     width: 30px;
     background-color: #7F7F7F;
