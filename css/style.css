@@ -90,7 +90,6 @@ ul{
     flex-basis: 50px;
     flex-shrink: 0;
     background-color: black;
-    padding: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
@@ -100,6 +99,7 @@ ul{
 /*LAVORO SULLE IMMAGINI DEL LOGO*/
 #logo img{    
     margin: 10px 0;
+    padding-left: 10px;
 }
 
 .logo-big{    
@@ -114,6 +114,7 @@ ul{
 #library img
 {
     margin: 5px 0;
+    padding-left: 10px;
     height: 30px;    
     vertical-align: middle;
     display: inline-block;
@@ -121,9 +122,11 @@ ul{
 .sidebar-icon{
     filter: opacity(0.5);
 }
+
 /*CREO LA SEZIONE PLAYLIST*/
 .playlist{
     margin: 20px 0;
+    padding-left: 20px;
     overflow: auto;
     flex-grow: 1;
     display: none;
@@ -161,6 +164,7 @@ ul{
 }
 
 .sidebar-footer{
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;  

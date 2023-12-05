@@ -18,8 +18,10 @@ li:hover a,
     border: 1px solid yellow;
 }
 
+
 .fa-circle-play:hover,
 header a:hover
 {    
     transform: scale(1.2);  
 }
+

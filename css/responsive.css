@@ -4,13 +4,19 @@
 @media screen and (min-width: 640px){
     .sidebar{
         flex-basis: 250px;
-        padding: 0 20px;
+    }
+    .sidebar-top > *{
+        padding-left: 10px;
     }
     .logo-small{
         display: none;
     }
     .logo-big{
         display: block;
+    }
+    #home{
+        border-left: 4px solid yellow;
+        filter: opacity(1);
     }
     .label{
         display: inline-block;
@@ -19,6 +25,7 @@
         display: block;
     }
     .sidebar-footer{
+        padding: 0 20px;
         align-items: flex-start;
     }
     .sidebar-footer img{
