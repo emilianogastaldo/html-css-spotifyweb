@@ -16,7 +16,7 @@ a {
 }
 
 img{
-    max-width: 100%;
+    max-height: 100%;
 }
 
 ul{
@@ -224,35 +224,73 @@ footer{
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  
+    justify-content: space-between;    
 }
-
+/*DIVIDO IL FOOTER IN TRE SEZIONI*/
 .playing-song,
 .volume-bar{
     flex-basis: 30%;
 }
 .play-bar{
     flex-grow: 1;
-    text-align: center;
-
 }
-.play-icon{
+/*LAVORO SULLA SEZIONE DELLA CANZONE*/
+
+
+
+/*LAVORO SULLA SEZIONE DEL PLAYER*/
+.play-icons{
     padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .fa-circle-play{
     font-size: 2rem;
 }
 .time-bar{
     font-size: x-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
+/* CREO LE BARRE DEL PLAYER E DEL VOLUME*/
 .progress-bar{
     display: inline-block;
     height: 5px;
     background-color: #555;
     border-radius: 5px;
+    position: relative;
+}
+.progress-bar .current-progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.time-bar .progress-bar{ 
     width: 70%;
+}
+.time-bar .current-progress{
+    
+    width: 11%;
+}
+/*LAVORO SULLA SEZIONE E BARRA DEL VOLUME*/
+.volume-bar{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    gap: 10px;
+    padding-right: 5px;
+}
+.volume-bar .progress-bar{
+    width: 100%;
+}
+.volume-bar .current-progress{
+    width: 45%;
 }
