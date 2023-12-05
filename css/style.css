@@ -98,12 +98,14 @@ ul{
 }
 /*LAVORO SULLE IMMAGINI DEL LOGO*/
 #logo img{    
-    max-width: 100%; 
     margin: 10px 0;
 }
-.logo-big{
-    display: none;
 
+.logo-big{    
+    padding: 20px 0;
+    padding-right: 20px;
+    width: 70%;
+    display: none;
 }
 /*STANDARDIZZO LE IMMAGINI SIDEBAR*/
 #home img,
