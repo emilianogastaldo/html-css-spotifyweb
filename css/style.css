@@ -49,18 +49,19 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 -20px;
-    text-align: center;
+    margin: 0 -10px;
+    
 }
 .col{
     flex-basis: calc(100% / 2);
-    padding: 20px;    
+    padding: 10px;    
 }
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /*creo titoli, sottotitoli e titoli sezione*/
