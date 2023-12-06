@@ -99,9 +99,6 @@ ul{
     overflow: hidden;
 }
 
-.sidebar-top{
-    flex-basis: 100%;
-}
 /*LAVORO SULLE IMMAGINI DEL LOGO*/
 #logo img{    
     margin: 10px 0;
@@ -135,6 +132,7 @@ ul{
 }
 .playlist ul{
     overflow: auto;
+    height: 300px;
 }
 .playlist p,
 .playlist a{    
@@ -357,3 +355,25 @@ footer{
 .volume-bar .current-progress{
     width: 45%;
 }
+
+
+/*modifico la scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7F7F7F;
+    border-radius: 10px; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
