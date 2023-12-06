@@ -98,7 +98,10 @@ ul{
     height: calc(100vh - 100px);
     overflow: hidden;
 }
-
+.sidebar-top{
+    height: calc(100vh - 90px);
+    overflow: hidden;
+}
 /*LAVORO SULLE IMMAGINI DEL LOGO*/
 #logo img{    
     margin: 10px 0;
@@ -129,10 +132,11 @@ ul{
     margin: 20px 0;
     padding-left: 10px;
     display: none;
+    height: 45%;
 }
 .playlist ul{
+    height: 100%;
     overflow: auto;
-    height: 300px;
 }
 .playlist p,
 .playlist a{    
