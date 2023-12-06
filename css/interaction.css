@@ -8,12 +8,17 @@ li:hover a,
     filter: opacity(1);
 }
 
+/*rendo visibile all'hover il play delle canzoni*/
+.card-img:hover .fa-circle-play{
+    display: flex;
+}
+
 .playlist li:hover .fa-plus{
     background-color: white;
 }
 
 /*ingrandisco i bottoni*/
-.fa-circle-play:hover,
+.play-bar .fa-circle-play:hover,
 header a:hover
 {    
     transform: scale(1.2);  

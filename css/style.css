@@ -222,19 +222,20 @@ main{
     flex-basis: auto;
 }
 
-.active{
+/*creo la classe per evidenziare in quale pagina sono*/
+.active::after{
+    content: '';
+    display: block;
     border-bottom: 3px solid yellow;
     margin: 3px auto;
     width: 50%;   
 }
-
 
 .content-navbar a{
     font-size: 12px;
     font-weight: 700;
     color: #7F7F7F;
 }
-
 
 .wrapper{
     padding: 0 20px;
@@ -244,40 +245,22 @@ main{
     position: relative;
 }
 
-.card-img::after{
-    font: var(--fa-font-regular);
-    content: '\f144';
-    display: none;
-    font-size: 50px;
+.card-img .fa-circle-play{
+    font-size: 3.5rem;
     position: absolute;
-    top: 50%;
-    right: 50%;   
-    translate: 50% -50%;
-}
-
-.card-img::before{
-    content: '';
-    display: none;
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-.popular .card-img::before{
-    content: '';
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.popular img{
+.popular img,
+.popular .fa-circle-play{
     border-radius: 50%;
 }
 
@@ -329,9 +312,7 @@ footer{
     align-items: center;
     gap: 20px;
 }
-.fa-circle-play{
-    font-size: 2rem;
-}
+
 .time-bar{
     font-size: x-small;
     display: flex;
