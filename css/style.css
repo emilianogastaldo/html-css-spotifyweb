@@ -50,7 +50,7 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 -10px;
+    margin: -10px;
     
 }
 .col{
@@ -72,11 +72,12 @@ ul{
     font-weight: 600;
 }
 .title{
-    margin: 15px 0;
+    margin: 10px 0;
 }
 .section-title{
     margin: 30px 0;
 }
+
 
 /*CREO LA PARTE SOPRA DEL BODY*/
 .body-top{
@@ -86,6 +87,7 @@ ul{
 
 
 /*DIVIDO IL body-top NELLA SIDEBAR E NEL MAIN*/
+
 .sidebar{
     flex-basis: 50px;
     flex-shrink: 0;
@@ -95,6 +97,10 @@ ul{
     justify-content: space-between;  
     height: calc(100vh - 100px);
     overflow: hidden;
+}
+
+.sidebar-top{
+    flex-basis: 100%;
 }
 /*LAVORO SULLE IMMAGINI DEL LOGO*/
 #logo img{    
@@ -109,9 +115,7 @@ ul{
     display: none;
 }
 /*STANDARDIZZO LE IMMAGINI SIDEBAR*/
-#home img,
-#search img,
-#library img
+#menu img
 {
     margin: 5px 0;
     padding-left: 10px;
@@ -126,9 +130,8 @@ ul{
 /*CREO LA SEZIONE PLAYLIST*/
 .playlist{
     margin: 20px 0;
-    padding-left: 20px;
+    padding-left: 10px;
     overflow: auto;
-    flex-grow: 1;
     display: none;
 }
 
@@ -147,16 +150,11 @@ ul{
     font-size: small;
 }
 
-.playlist p::before{
-    font: var(--fa-font-solid);
-    content: "\2b";
-
-    display: inline-block;
+.fa-plus{
     text-align: center;
     line-height: 40px;
     width: 40px;
     height: 40px;
-    font-size: larger;
     background-color: #7F7F7F;
     color: black;
     vertical-align: middle;
@@ -164,8 +162,10 @@ ul{
 }
 
 .sidebar-footer{
+    height: 90px;
     padding: 0 10px;
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     align-items: center;  
 }
@@ -222,13 +222,12 @@ main{
     flex-basis: auto;
 }
 
-.content-navbar li::after{
-    content: '';
-    display: block;
-    width: 50%;
-    border: 1px solid transparent;
-    margin: 0 auto;
+.active{
+    border-bottom: 3px solid yellow;
+    margin: 3px auto;
+    width: 50%;   
 }
+
 
 .content-navbar a{
     font-size: 12px;

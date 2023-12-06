@@ -5,16 +5,13 @@
     .sidebar{
         flex-basis: 250px;
     }
-    .sidebar-top > *{
-        padding-left: 10px;
-    }
     .logo-small{
         display: none;
     }
     .logo-big{
         display: block;
     }
-    #home{
+    #menu li:first-child{
         border-left: 4px solid yellow;
         filter: opacity(1);
     }
@@ -25,7 +22,6 @@
         display: block;
     }
     .sidebar-footer{
-        padding: 0 20px;
         align-items: flex-start;
     }
     .sidebar-footer img{
@@ -41,7 +37,7 @@
 /*MEDIA QUERY PER UNO SCREMO MEDIUM*/
 @media screen and (min-width: 900px){
     .row{
-        margin: 0 -5px;
+        margin: -5px;
     }
     .col{
         padding: 5px;
@@ -55,7 +51,7 @@
         padding: 0 40px ;
     }
     .row{
-        margin: 0 -10px;
+        margin: -10px;
     }
     .col{
         padding: 10px;

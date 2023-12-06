@@ -1,23 +1,15 @@
 /*HOVER PER FAR DIVENTARE BIANCHE LE SCRITTE*/
 li:hover a,
-.playlist p:hover{
+.playlist .fa-plus:hover a{
     color: white;
-    cursor: pointer;
 }
 
 .sidebar-icon:hover{
-    cursor: pointer;
     filter: opacity(1);
 }
 
-.playlist p:hover::before{
+.playlist li:hover .fa-plus{
     background-color: white;
-}
-
-/*linea giallo sotto alla lista della navbar del main*/
-.content-navbar li:active::after{
-    content: '';
-    border: 1px solid yellow;
 }
 
 /*ingrandisco i bottoni*/
@@ -25,19 +17,16 @@ li:hover a,
 header a:hover
 {    
     transform: scale(1.2);  
-    cursor: pointer;
 }
 
 /*evidenzio il sottotitolo*/
 .song-title .subtitle:hover{
-    cursor: pointer;
     text-decoration: underline;
     color: white;
 }
 
 /*Faccio diventare gialla la barra*/
 .progress-bar .current-progress:hover{
-    cursor: pointer;
     background-color: yellow;
 }
 .progress-bar .current-progress:hover::after{
