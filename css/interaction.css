@@ -1,7 +1,9 @@
 /*HOVER PER FAR DIVENTARE BIANCHE LE SCRITTE*/
-li:hover a,
-.playlist .fa-plus:hover a{
+a:hover{
     color: white;
+}
+a:hover .fa-plus{
+    background-color: white;
 }
 
 .sidebar-icon:hover{
@@ -11,10 +13,6 @@ li:hover a,
 /*rendo visibile all'hover il play delle canzoni*/
 .card-img:hover .fa-circle-play{
     display: flex;
-}
-
-.playlist li:hover .fa-plus{
-    background-color: white;
 }
 
 /*ingrandisco i bottoni*/
